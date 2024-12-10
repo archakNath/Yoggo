@@ -37,7 +37,7 @@ const Accordian = ({ heading, subheading, description }) => {
     >
       <div className="flex gap-4 flex-col">
         <div className="flex justify-between items-center">
-          <h1 className="text-7xl font-extralight leading-tight max-md:text-5xl">{heading}</h1>
+          <h1 className="text-7xl font-extralight leading-tight max-md:text-5xl uppercase">{heading}</h1>
           <div
             className="border border-black p-1 rounded-full cursor-pointer w-10 h-10 flex items-center justify-center translate-y-[-10px] max-md:translate-y-0"
             onClick={handleOpenClose}
