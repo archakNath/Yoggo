@@ -269,6 +269,78 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* banner */}
+      <div id="banner1" className="rounded-3xl overflow-hidden">
+        <div className="bg-[#00000071] py-24 pX-10 flex flex-col gap-5 text-white items-center">
+          <h1 className="text-5xl text-center font-extralight">
+            The <i className="font-normal">ultimate</i> place <br /> to find{" "}
+            <i className="font-normal">harmony</i> <br /> of{" "}
+            <i className="font-normal">body</i> & soul.
+          </h1>
+          <p className="p-5 text-center">
+            Don't believe? Enroll to a trial class, it's completely free of
+            charge.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex gap-1 hover:gap-2 transition-all items-center px-4 py-2 border border-black rounded-full w-fit my-12 mx-auto cursor-pointer">
+        <p className="uppercase">Take a trial class</p>
+        <ArrowRight className="w-5 h-5" />
+      </div>
+
+      {/* footer */}
+      <footer className="flex flex-col mt-24">
+        <div className="grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-1">
+          <p className="text-2xl col-span-1 max-sm:text-center">YOGGO</p>
+          <div className="hidden max-sm:flex my-9"/>
+          <div className="grid grid-cols-2 col-span-2 max-sm:grid-cols-1 gap-5">
+            <div className="flex flex-col max-md:items-center">
+              <h1 className="font-semibold">Quick Links</h1>
+              <ul className="flex flex-col max-md:items-center">
+                <li className="underline">Classes</li>
+                <li className="underline">Instructor</li>
+                <li className="underline">Schedule</li>
+              </ul>
+            </div>
+            <div className="flex flex-col max-md:items-center">
+              <h1 className="font-semibold">Company</h1>
+              <ul className="flex flex-col max-md:items-center">
+                <li className="underline">Contacts</li>
+                <li className="underline">About us</li>
+                <li className="underline">Yoga styles</li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full h-[1px] bg-black col-span-3 my-6 hidden max-md:flex"/>
+          <div className="col-span-1 max-md:col-span-3">
+            <h1 className="font-semibold">Newsletter</h1>
+            <p>
+              Subscribe to be aware of our regular promotions & exclusive
+              offers!
+            </p>
+            <div className="flex items-center border border-black rounded-full py-2 px-4 mt-2">
+              <input type="text" placeholder="Email" className="outline-none flex-1 text-sm" />
+              <ArrowRight />
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-[1px] bg-black mt-6"/>
+        <div className="flex justify-between items-center gap-2 text-sm mt-5 max-md:flex-col">
+          <div className="flex gap-2">
+          <u>Instagram</u>
+          <u>TikTok</u>
+          <u>Youtube</u>
+          </div>
+          <p>Copyright 2024 YOGGO Studio.</p>
+          <div className="flex gap-2">
+            <u>Privacy Policy</u>
+            <u>Terms & Conditions</u>
+            <u>Support</u>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
